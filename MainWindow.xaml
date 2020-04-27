@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Курсовой проект" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="584*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="14*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Расшифровать" HorizontalAlignment="Left" Height="51" Margin="58,43,0,0" VerticalAlignment="Top" Width="171" Click="Button_Click" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="TextBox" HorizontalAlignment="Left" Height="51" Margin="58,212,0,0" Text="D:\Result_v5.txt" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" TextChanged="TextBox_TextChanged" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Height="51" Margin="58,111,0,0" VerticalAlignment="Top" Width="171" Click="Button_Click_1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="TextOnMain1" HorizontalAlignment="Left" Height="346" Margin="37,39,0,0" Text="Здесь будет выведен исходный текст дешифровки" TextWrapping="Wrap" VerticalAlignment="Top" Width="507" Grid.RowSpan="2" Grid.Column="2"/>
+        <Rectangle HorizontalAlignment="Left" Height="372" Margin="24,28,0,0" Stroke="Black" VerticalAlignment="Top" Width="533" Grid.RowSpan="2" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="63,172,0,0" Text="Путь для дешифровки или сохранения файла:" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Grid.ColumnSpan="3"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="91" Margin="58,172,0,0" VerticalAlignment="Top" Width="171" Grid.RowSpan="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="KeyBox" HorizontalAlignment="Left" Height="43" Margin="58,114,0,0" Text="скорпион" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" TextChanged="KeyBox_TextChanged" Grid.ColumnSpan="3"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="63,85,0,0" Text="Ключ для дешифровки:" TextWrapping="Wrap" VerticalAlignment="Top" Width="161" Grid.ColumnSpan="3"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="0" Margin="58,157,0,0" VerticalAlignment="Top" Width="0"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="81" Margin="58,76,0,0" VerticalAlignment="Top" Width="171" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>
